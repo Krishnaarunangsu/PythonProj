@@ -1,1 +1,2 @@
 print('God')
+print('Narayan')
