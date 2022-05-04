@@ -27,6 +27,7 @@ cnx = connection.MySQLConnection(user='scott', password='password',
                                  database='employees')
 cnx.close()
 
+x = 'Krishna'
 config = {
     'user': 'scott',
     'password': 'password',
