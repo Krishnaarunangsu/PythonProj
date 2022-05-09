@@ -4,25 +4,53 @@
 from multipledispatch import dispatch
 
 
-# passing one parameter
-@dispatch(int, int)
-def product(first, second):
-    result = first * second
-    print(result);
+class PythonOverload:
+    """
 
+    """
 
-# passing two parameters
-@dispatch(int, int, int)
-def product(first, second, third):
-    result = first * second * third
-    print(result);
+    def __init__(self):
+        """
+        Initialization
+        """
+        self.result = 0
 
+    @dispatch(int, int)
+    def product(self, first, second):
+        """
 
-# you can also pass data type of any value as per requirement
-@dispatch(float, float, float)
-def product(first, second, third):
-    result = first * second * third
-    print(result);
+        :param first:
+        :param second:
+        :return:
+        """
+        self.result = first * second
+        return self.result
+
+    @dispatch(int, int, int)
+    def product(self, first, second, third):
+        """
+         Passing two pa
+        :param first:
+        :param second:
+        :param third:
+        :return:
+        """
+
+        self.result = first * second * third
+        return self.result
+
+    # you can also pass data type of any value as per requirement
+    @dispatch(float, float, float)
+    def product(self, first, second, third):
+        """
+        Passing three parameters
+        :param first:
+        :param second:
+        :param third:
+        :return:
+        """
+        self.result = first * second * third
+        return self.result
 
 
 # calling product method with 2 arguments
