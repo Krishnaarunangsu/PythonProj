@@ -20,7 +20,7 @@ class Edpresso:
         if name is not None:
             print('Hello ' + name + " " + "ID" + ":" + str(self.id))
         else:
-            print('Hello ')
+            print('Hey' + " " + "ID" + ":" + str(self.id))
 
 
 # Create an instance
@@ -30,8 +30,8 @@ obj = Edpresso()
 obj.hello()
 
 # Call the method with a parameter
-obj.hello('Kadambini')
+obj.hello('Jerry')
 
 # object with value
 obj = Edpresso(9)
-obj.hello('Kadambini')
+obj.hello('Jerry')
