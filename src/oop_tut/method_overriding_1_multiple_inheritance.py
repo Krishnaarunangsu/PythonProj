@@ -5,12 +5,12 @@
 # Defining parent class 1
 class Parent1:
     """
-
+    Parent 1 Class
     """
 
     def __init__(self):
         """
-
+         Initialization
         """
 
     # Parent's show method
@@ -25,12 +25,12 @@ class Parent1:
 # Defining Parent class 2
 class Parent2:
     """
-
+     Parent 2 Class
     """
 
     def __init__(self):
         """
-
+         Initialization
         """
 
     # Parent's show method
@@ -47,6 +47,10 @@ class Child(Parent1, Parent2):
 
     # Child's show method
     def show(self):
+        """
+        Show of Child
+        :return:
+        """
         print(f"Inside Child:{self}")
 
 

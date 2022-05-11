@@ -3,6 +3,9 @@
 
 
 class Parent:
+    """
+    Parent Class
+    """
 
     # Parent's show method
     def display(self):
@@ -22,6 +25,10 @@ class GrandChild(Child):
 
     # Child's show method
     def show(self):
+        """
+        Show the Grand child
+        :return:
+        """
         print(f"Inside GrandChild:{self}")
 
 
