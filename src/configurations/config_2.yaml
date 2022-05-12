@@ -1,0 +1,26 @@
+---
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  simple:
+    format: '[%(asctime)s: %(levelname)s] %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: ERROR
+    formatter: simple
+    stream: ext://sys.stdout
+  file_handler:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: autosklearn.log
+root:
+  level: DEBUG
+  handlers: [ console, file_handler ]
+loggers:
+  server:
+    level: INFO
+    handlers: [ console, file_handler ]
+    propagate: no
