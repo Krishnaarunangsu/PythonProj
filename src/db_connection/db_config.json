@@ -3,5 +3,5 @@
   "password": "Narayan@15",
   "host": "127.0.0.1",
   "database": "narayan",
-  "raise_on_warnings": "True"
+  "raise_on_warnings": true
 }

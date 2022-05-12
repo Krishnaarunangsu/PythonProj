@@ -8,11 +8,16 @@ handlers:
     level: DEBUG
     formatter: simple
     stream: ext://sys.stdout
+  file_handler:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    args: "/src/log/file.log"
 loggers:
   sampleLogger:
     level: DEBUG
-    handlers: [ console ]
+    handlers: [ console,file_handler ]
     propagate: no
 root:
   level: DEBUG
-  handlers: [ console ]
+  handlers: [ console,file_handler ]

@@ -5,6 +5,8 @@ disable_existing_loggers: False
 formatters:
   simple:
     format: '[%(asctime)s: %(levelname)s] %(message)s'
+  extended:
+    format: '%(asctime)-20s :: %(levelname)-8s :: [%(process)d]%(processName)s :: %(threadName)s[%(thread)d] :: %(pathname)s :: %(lineno)d :: %(message)s'
 handlers:
   console:
     class: logging.StreamHandler
@@ -14,7 +16,7 @@ handlers:
   file_handler:
     class: logging.FileHandler
     level: DEBUG
-    formatter: simple
+    formatter: extended
     filename: autosklearn.log
 root:
   level: DEBUG

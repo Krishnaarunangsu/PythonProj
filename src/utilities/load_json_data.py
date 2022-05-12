@@ -24,6 +24,7 @@ class LoadJSON:
         with open(self.file_name) as db_config:
             self.json_data = json.load(db_config)
             pprint(self.json_data)
+            return self.json_data
 
 # load_json = LoadJSON()
 # load_json.load_json_data_from_file('..\\db_connection\\db_config.json')
