@@ -1,11 +1,7 @@
-# Python Code to illustrate with
-
-
 class FileHandling:
     """
     File Handling class
     """
-
     def __init__(self):
         """
         Initialization
@@ -14,13 +10,17 @@ class FileHandling:
         self.file_data = None
 
     def read_file(self, file_name: str):
+        """
+        Read the file
+        :param file_name:
+        :return:
+        """
         self.file_name = file_name
         try:
             with open(self.file_name) as file_read:
                 self.file_data: str = file_read.read()
         except FileNotFoundError as fe:
             print(fe)
-            print('File Does Not Exist')
         finally:
             return self.file_data
 
