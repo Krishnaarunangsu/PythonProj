@@ -8,3 +8,4 @@ class Person:
 
 # create printAge class method
 Person.print_age()
+person = Person()

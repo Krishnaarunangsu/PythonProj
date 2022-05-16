@@ -9,7 +9,7 @@ with open('..\\..\\src\\configurations\\config_2.yaml', 'r') as f:
 logger = logging.getLogger(__name__)
 
 logger.debug('This is a debug message')
-logger.error('This is a debug message')
-logger.info('This is a debug message')
+logger.error('This is a error message')
+logger.info('This is a info message')
 
 # https://gist.github.com/kingspp/9451566a5555fb022215ca2b7b802f19
