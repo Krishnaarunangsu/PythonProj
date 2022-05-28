@@ -10,5 +10,7 @@ def simple_generator_fun():
 
 
 # Driver code to check above generator function
-for value in simple_generator_fun():
-    print(value)
+# for value in simple_generator_fun():
+#     print(value)
+output = simple_generator_fun()
+print(output)

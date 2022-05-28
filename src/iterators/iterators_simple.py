@@ -15,20 +15,14 @@ class IteratorSimple:
         :return:
         """
         self.my_list = [4, 7, 0, 3]
+
         # get an iterator using iter()
         my_iter = iter(self.my_list)
+
         # iterate through it using next()
-
-        # Output: 4
         print(next(my_iter))
-        # Output: 7
         print(next(my_iter))
-        # next(obj) is same as obj.__next__()
-
-        # Output: 0
         print(my_iter.__next__())
-
-        # Output: 3
         print(my_iter.__next__())
 
         # This will raise error, no items left
@@ -67,4 +61,4 @@ class IteratorSimple:
 
 if __name__ == "__main__":
     iterator_simple = IteratorSimple()
-    iterator_simple.show_iterables_1()
+    iterator_simple.show_iterables()

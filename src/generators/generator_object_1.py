@@ -12,6 +12,6 @@ def simple_generator_fun():
 x = simple_generator_fun()
 
 # Iterating over the generator object using next
-print(x.next())  # In Python 3, __next__()
-print(x.next())
-print(x.next())
+print(x.__next__())  # In Python 3, __next__()
+print(x.__next__())
+# print(x.__next__())

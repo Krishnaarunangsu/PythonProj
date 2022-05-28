@@ -5,19 +5,19 @@ from src.utilities import load_json_data
 
 class DatabaseConnection:
     """
-
+    Database Connection Class
     """
 
     def __init__(self):
         """
-
+        Constructor
         """
         self.db_config_data = None
         self.connection = None
 
     def create_connection(self):
         """
-
+        Create the Connection
         :return:
         """
         self.db_config_data = load_json_data.LoadJSON()  # Instantiate the LoadJSON Object
