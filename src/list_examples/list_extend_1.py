@@ -9,15 +9,13 @@ numbers.extend(prime_numbers)
 
 print('List after extend():', numbers)
 
-# Output: List after extend(): [1, 4, 2, 3, 5]
-
 # languages list
 languages = ['French', 'English']
 
 # another list of language
-languages1 = ['Spanish', 'Portuguese']
+languages_1 = ['Spanish', 'Portuguese']
 
 # appending language1 elements to language
-languages.extend(languages1)
+languages.extend(languages_1)
 
 print('Languages List:', languages)

@@ -1,7 +1,5 @@
 # Changing and adding Dictionary Elements
 my_dict = {'name': 'Jack', 'age': 27}
-
-# update value
 print(my_dict)
 
 # add item

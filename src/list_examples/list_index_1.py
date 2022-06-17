@@ -17,15 +17,15 @@ index = vowels.index('i')
 vowels = ['a', 'e', 'i', 'o', 'u']
 
 # index of 'p' is vowels
-index = vowels.index('p')
+# index = vowels.index('p')
 
 print('The index of p:', index)
 
 # alphabets list
 alphabets = ['a', 'e', 'i', 'o', 'g', 'l', 'i', 'u']
 
-# index of 'i' in alphabets
-index = alphabets.index('e')  # 1
+# index of 'e' in alphabets
+index = alphabets.index('e')
 
 print('The index of e:', index)
 
