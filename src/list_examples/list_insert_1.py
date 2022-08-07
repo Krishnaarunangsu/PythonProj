@@ -3,7 +3,7 @@ prime_numbers = [2, 3, 5, 7]
 print('List of prime numbers:', prime_numbers)
 
 # insert 11 at index 4
-prime_numbers.insert(4, 11)
+prime_numbers.insert(2, 11)
 print('Modified List of prime numbers:', prime_numbers)
 
 # insert 13 at the index 7
