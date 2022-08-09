@@ -2,7 +2,6 @@ class FileHandling:
     """
     File Handling class
     """
-
     def __init__(self):
         """
         Initialization
