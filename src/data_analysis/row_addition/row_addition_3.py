@@ -17,7 +17,7 @@ new_records = {
         'Science': [93, 81]
 }
 
-df2 = pd.DataFrame(dict)
+df2 = pd.DataFrame(new_records)
 print(f'Original Dataframe-2:\n{df1}')
 
 df3 = pd.concat([df1, df2], ignore_index=True)
