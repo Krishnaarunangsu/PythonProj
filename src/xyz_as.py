@@ -34,3 +34,7 @@ if __name__ == '__main__':
     print(f"Size:{size_formatted}")
 
 
+print('God')
+print('Narayan')
+print('Tirupati')
+
