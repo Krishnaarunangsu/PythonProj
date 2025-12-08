@@ -1,0 +1,10 @@
+i=1
+while True:
+  if i % 3 == 0:
+    break
+    i += 1
+
+# while i > 0:
+#   if i % 3 == 0:
+#     break
+#     i += 1
